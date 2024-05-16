@@ -15,11 +15,17 @@ namespace Programming_workout_XII
         }
         public override double GetRentalCost()
         {
-            return 0.0;
+            if (hasHelmetIncluded)
+            {
+                return 200 + 145;
+            }else
+            {
+                return 200;
+            }
         }
-        public override double GetvehicleDetails()
+        public override string GetvehicleDetails()
         {
-            return 0.0;
+            return $"Brand: {this.brand}\nModel: {this.model}\nRegistration Number: {this.registrationNumber}\n\n Helmet Included: {this.hasHelmetIncluded}" ;
         }
     }
 }

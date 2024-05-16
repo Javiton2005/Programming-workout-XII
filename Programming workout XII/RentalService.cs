@@ -8,5 +8,32 @@ namespace Programming_workout_XII
 {
     internal class RentalService
     {
+        List<vehicle> vehicles;
+        public RentalService() 
+        {
+            vehicles = new List<vehicle>();
+        }
+        public void addVehicle(vehicle vehicle)
+        {
+            vehicles.Add(vehicle);
+        }
+        public void calculateTotalrentalCost() 
+        {
+            foreach (vehicle vehicle in vehicles) 
+            {
+                vehicle.GetvehicleDetails();
+                Console.WriteLine(vehicle.GetRentalCost());
+            }
+
+        }
+
+        public void ProntVehicleDetails()
+        {
+            foreach (vehicle vehicle in vehicles)
+            {
+                Console.WriteLine();
+                Console.WriteLine(vehicle.GetvehicleDetails());
+            }
+        }
     }
 }

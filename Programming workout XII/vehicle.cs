@@ -20,7 +20,7 @@ namespace Programming_workout_XII
         }
 
         public abstract double GetRentalCost();
-        public abstract double GetvehicleDetails();
+        public abstract string GetvehicleDetails();
 
     }
 }

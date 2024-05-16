@@ -15,11 +15,12 @@ namespace Programming_workout_XII
         }
         public override double GetRentalCost()
         {
-            return 0.0;
+
+            return 100+85*this.numberOfSeats;
         }
-        public override double GetvehicleDetails()
+        public override string GetvehicleDetails()
         {
-            return 0.0;
+            return $"Brand {this.brand}\nModel {this.model}\nRegistration Number {this.registrationNumber}\n\n Number of seats {this.numberOfSeats}";
         }
     }
 }
