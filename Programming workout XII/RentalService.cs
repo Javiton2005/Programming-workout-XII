@@ -21,8 +21,7 @@ namespace Programming_workout_XII
         {
             foreach (vehicle vehicle in vehicles) 
             {
-                vehicle.GetvehicleDetails();
-                Console.WriteLine(vehicle.GetRentalCost());
+                Console.WriteLine(vehicle.GetvehicleDetails());
             }
 
         }
